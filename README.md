@@ -1,10 +1,10 @@
 # 陽明交通大學碩博士論文 XeLaTeX 模板
 
-[nycu-thesis]((https://github.com/borting/nctu-thesis)
+[nycu-thesis]((https://github.com/indigo40123/NYCU-Thesis-Template)
 Template are developed based on XeLaTeX + xeCJK.
 
 ## 下載
-  你可以 clone 這個 repos, 或是到[這裡](https://github.com/borting/nctu-thesis/tags)下載最新版本
+  你可以 clone 這個 repos, 或是到[這裡](https://github.com/indigo40123/NYCU-Thesis-Template)下載最新版本
 
 ## 快速上手
 * Use command line
@@ -23,13 +23,13 @@ Template are developed based on XeLaTeX + xeCJK.
     (這樣你和你的指導教授用不同作業系統寫論文時, 就不用每次重新設定中文字型啦)
 
 ## 說明
-   進階的使用教學請參考 [README.pdf](https://github.com/borting/nctu-thesis/blob/master/README.pdf)
+   進階的使用教學請參考 [README.pdf](https://github.com/indigo40123/NYCU-Thesis-Template/README.pdf)
 
 
 ## Acknowledgement
-   此模板的前身交大 borting 同學的 [nctu-thesis](https://github.com/borting/nctu-thesis) 
-
+   此模板的前身是交大 borting chen同學的 [nctu-thesis](https://github.com/borting/nctu-thesis) 
    此模板的貢獻為更新陽交大的封面頁,Latex設定及格式還參考了以下幾位的模板. Thank you.
+   
 * 台科大 hdj 與 saiba 兩位學長的 [ntust-thesis template](https://code.google.com/archive/p/ntust-thesis/downloads)
 * 交大 Po-hao Huang 同學的 [nctu-thesis template](https://github.com/Po-haoHuang/nctu-thesis)
 * 台大 [qcl](https://github.com/qcl/qcl-master-thesis) 與 [tzhuan](https://github.com/tzhuan/ntu-thesis) 兩位同學的 ntu-thesis template
