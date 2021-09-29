@@ -28,10 +28,11 @@ Template are developed based on XeLaTeX + xeCJK.
 
 ## Acknowledgement
    此模板的前身是交大 borting chen同學的 [nctu-thesis](https://github.com/borting/nctu-thesis) 
-   此模板的貢獻為更新陽交大的封面頁,Latex設定及格式還參考了以下幾位的模板. Thank you.
+   此模板的貢獻為更新陽交大的封面頁,Latex設定及格式還參考了Chun Sing Leung學長以及以下幾位的模板. Thank you.
    
 * 台科大 hdj 與 saiba 兩位學長的 [ntust-thesis template](https://code.google.com/archive/p/ntust-thesis/downloads)
 * 交大 Po-hao Huang 同學的 [nctu-thesis template](https://github.com/Po-haoHuang/nctu-thesis)
+* 交大 Chiehmin (FatMinMin) 同學的 [nctu-thesis](https://github.com/chiehmin/nctu-thesis)
 * 台大 [qcl](https://github.com/qcl/qcl-master-thesis) 與 [tzhuan](https://github.com/tzhuan/ntu-thesis) 兩位同學的 ntu-thesis template
 
 ## License
