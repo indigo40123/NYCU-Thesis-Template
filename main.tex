@@ -1,0 +1,119 @@
+\documentclass[]{thesis}  % draft mode (default)
+%\documentclass[review]{thesis}  % review mode (show contents & reference only)
+%\documentclass[watermark,final]{thesis}  % final mode (version for library)
+
+%-------------------------------------------------------------------------------
+% Package Loading
+%-------------------------------------------------------------------------------
+
+\usepackage{multirow}     % for multi-row table
+\usepackage{booktabs}     % table style used in books
+
+%-------------------------------------------------------------------------------
+% Configuration
+%-------------------------------------------------------------------------------
+
+% 填寫題目, 作者, 指導教授, 學校, 系所, 日期等資訊
+\input{config/frontmatters}
+
+% 修改 thesis.cls 的預設字型
+\input{config/fonts}
+
+\begin{document}
+
+% Show repeated author names in bibliography when using IEEEtran.bst
+% Comment out this line if you don't set IEEEtran in \bibliographystyle{}
+\bstctlcite{IEEEexample:BSTcontrol}
+
+% Generate cover, title, authorization, approval and copyright pages
+\maketitle
+
+%-------------------------------------------------------------------------------
+% Abstract
+%-------------------------------------------------------------------------------
+
+% 中文摘要
+\input{abs/abstract_zh}
+
+% 英文摘要
+\input{abs/abstract_en}
+
+%-------------------------------------------------------------------------------
+% Acknowledgement
+%-------------------------------------------------------------------------------
+
+% 誌謝
+\input{ack/ack}
+
+% 題獻頁 (Only shown in the final mode of a PhD dissertation)
+\input{ack/dedication}
+
+%-------------------------------------------------------------------------------
+% 目錄
+%-------------------------------------------------------------------------------
+
+% Generate 'Table of Contents', 'List of Figures', and 'List of Tables', and
+% Set page numbering to 'arabic'
+\maketocs
+
+%-------------------------------------------------------------------------------
+% Contents
+%-------------------------------------------------------------------------------
+
+% Set page numbering to 'arabic' (1, 2, 3, ...)
+\mainmatter
+
+% 內文, 請依照章節順序擺放
+\input{chapters/1-intro}
+\input{chapters/2-doccls}
+\input{chapters/3-secorder}
+\input{chapters/4-ref}
+\input{chapters/5-figure}
+
+%-------------------------------------------------------------------------------
+% 參考文獻
+%-------------------------------------------------------------------------------
+
+% Set bib style
+\bibliographystyle{IEEEtran}
+
+% Add Bibliography to "Table of Contents"
+\addBibToContents
+
+% Usage:
+%   \bibliography{bib/bib1,bib/bib2,...,bib/bibN} % 注意: 不要有空格
+%
+% For IEEEtran users:
+%   DO NOT remove bib/BSTcontrol.bib when using IEEEtran.bst. The reason is that
+% when we cite two papers of the same (or similar) authors, IEEEtran.bst would
+% replace the author names with "------". To avoid this, we use BSTControl.bib
+% to set ctldash_repeated_names to 'no'.
+%
+% For non IEEEtran users:
+%   Please delete bib/ieeeBSTcontrol from \bibliography{}
+\bibliography{bib/ieeeBSTcontrol,bib/thesis}
+
+%-------------------------------------------------------------------------------
+% 附錄
+%-------------------------------------------------------------------------------
+
+% Start appendix
+\appendix
+
+% Add appendicies to "Table of Contents"
+\addAppxToContents
+
+% 請從此開始依序擺放附錄
+\input{appx/1-appendix}
+
+%-------------------------------------------------------------------------------
+% 作者簡歷
+%-------------------------------------------------------------------------------
+
+% 簡歷 (Only shown in a PhD dissertation)
+\input{author/cv}
+
+% 著作列表 (Only shown in a PhD dissertation)
+\input{author/publications}
+
+\end{document}
