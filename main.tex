@@ -1,4 +1,4 @@
-\documentclass[]{thesis}  % draft mode (default)
+\documentclass[watermark,final]{thesis}  % draft mode (default)
 %\documentclass[review]{thesis}  % review mode (show contents & reference only)
 %\documentclass[watermark,final]{thesis}  % final mode (version for library)
 
@@ -28,6 +28,9 @@
 % Generate cover, title, authorization, approval and copyright pages
 \maketitle
 
+% 題獻頁 (Only shown in the final mode of a PhD dissertation)
+\input{ack/dedication}
+
 %-------------------------------------------------------------------------------
 % Abstract
 %-------------------------------------------------------------------------------
@@ -39,16 +42,7 @@
 \input{abs/abstract_en}
 
 %-------------------------------------------------------------------------------
-% Acknowledgement
-%-------------------------------------------------------------------------------
 
-% 誌謝
-\input{ack/ack}
-
-% 題獻頁 (Only shown in the final mode of a PhD dissertation)
-\input{ack/dedication}
-
-%-------------------------------------------------------------------------------
 % 目錄
 %-------------------------------------------------------------------------------
 

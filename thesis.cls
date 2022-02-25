@@ -7,9 +7,9 @@
 % 必須按照著作人指定的方式表彰其姓名。
 %-------------------------------------------------------------------------------
 % Author: LiCheng Feng (indigo40123@gmail.com)
-% Source: https://github.com/borting/nctu-thesis
+% Source: https://github.com/indigo40123/NYCU-Thesis-Template
 %-------------------------------------------------------------------------------
-\ProvidesClass{thesis}[2021/09/29 V1.0 by LiCheng Feng]
+\ProvidesClass{thesis}[2022/02/25 V2.0]
 \NeedsTeXFormat{LaTeX2e}
 
 %-------------------------------------------------------------------------------
@@ -291,15 +291,15 @@
 
 % Define macros related to degree
 \ifTHESISOPTIONmaster
-  \thesistype{Master Thesis Dissertation}%
+  \thesistype{Master Thesis}%
   \thesistypezh{碩士論文}%
   \degree{Master}%
-  \reservedfrontpages{2}% 授權書 + 中文審定書
+  \reservedfrontpages{0}% 授權書 + 中文審定書
 \else
   \thesistype{Doctoral Dissertation}%
   \thesistypezh{博士論文}%
   \degree{Doctor of Philosophy}%
-  \reservedfrontpages{3}% 授權書 + 中文審定書 + 英文審定書
+  \reservedfrontpages{0}% 授權書 + 中文審定書 + 英文審定書
 \fi
 
 % Define language-related macros for front pages and back pages
@@ -444,7 +444,7 @@
   \ifTHESISOPTIONfinal
     \begin{tikzpicture}%
       \node[minimum width=\paperwidth,minimum height=\paperheight,opacity=0.75]%
-        {\includegraphics[width=0.75\textwidth]{\@watermark}};%
+        {\includegraphics[width=0.4\textwidth]{\@watermark}};%
     \end{tikzpicture}%
   \fi
 \fi
@@ -581,6 +581,7 @@
     \ifTHESISOPTIONdraft
       %\makebox[2cm][s]{\textbf{\textsf{初稿}}}\\
       \fontsize{18}{27}{初稿}\\
+    \fi
     \vspace{2\baselineskip}
     
     \fontsize{14}{21}{\@institute}\\
@@ -619,7 +620,7 @@
   % Submission date in Chinese
   \vspace{3cm}
   
-  \fontsize{18}{27}{\@degreeyearzh}\\
+  \fontsize{18}{27}\Large{\@nation} \Large{\@yearmonth}\\
   \LARGE{\@degreemonth} \ \LARGE{\@degreeyear} \\
   \end{center}
 }
@@ -682,9 +683,9 @@
     \vfill
 % Submission description in English
     \ifTHESISOPTIONdraft
-      \centerline{{A Thesis/Dissertation Draft}} \vspace{-1.0em}%
+      \centerline{{A Thesis Draft}} \vspace{-1.0em}%
     \else
-      \centerline{{A Thesis/Dissertation}} \vspace{-1.0em}%
+      \centerline{{A Thesis}} \vspace{-1.0em}%
     \fi
     Submitted to {\@institute} \vspace{-1.0em}\\
     \@college \vspace{-1.0em}\\
@@ -700,7 +701,7 @@
     {{\@degreemonth} {\@degreeyear}}\\
     \@location\\
     \vfill
-    \normalsize{\@nation} \Large{\@yearmonth}
+    \Large{\@nation} \Large{\@yearmonth}
   \end{center}
 }
 
@@ -767,15 +768,19 @@
 % Cover page
   \coverpage
 
-% Set page numbering to 'roman' (i, ii, iii, ...)
-  \frontmatter
 
 % Title page
   \titlepage
-
+  
+% Ack page
+  \input{ack/ack}
+  
 % Authorization page
 %  \authzpage
 
+% Set page numbering to 'roman' (i, ii, iii, ...)
+  \frontmatter
+  
 % Chinese approval page
 %  \approvalzhpage
 
@@ -783,9 +788,9 @@
 %  \approvalenpage
 
 % Copyright page (final mode only)
-  \ifTHESISOPTIONfinal
-    \copyrightpage
-  \fi
+  %\ifTHESISOPTIONfinal
+  %  \copyrightpage
+  %\fi
 \fi
 }}
 
