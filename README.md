@@ -2,6 +2,7 @@
 
 [nycu-thesis]((https://github.com/indigo40123/NYCU-Thesis-Template)
 Template are developed based on XeLaTeX + xeCJK.
+
 Online version powered by Overleaf could be found here:
 https://www.overleaf.com/latex/templates/national-yang-ming-chiao-tung-university-nycu-thesis-template/zgjfrxhcdcmj
 
