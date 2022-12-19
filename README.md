@@ -2,6 +2,8 @@
 
 [nycu-thesis]((https://github.com/indigo40123/NYCU-Thesis-Template)
 Template are developed based on XeLaTeX + xeCJK.
+Online version powered by Overleaf could be found here:
+https://www.overleaf.com/latex/templates/national-yang-ming-chiao-tung-university-nycu-thesis-template/zgjfrxhcdcmj
 
 ## 下載
   你可以 clone 這個 repos, 或是到[這裡](https://github.com/indigo40123/NYCU-Thesis-Template)下載最新版本
