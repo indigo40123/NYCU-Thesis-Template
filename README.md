@@ -1,6 +1,6 @@
 # 陽明交通大學碩博士論文 XeLaTeX 模板
 
-[nycu-thesis]((https://github.com/indigo40123/NYCU-Thesis-Template)
+[nycu-thesis](https://github.com/indigo40123/NYCU-Thesis-Template)
 Template are developed based on XeLaTeX + xeCJK.
 
 Online version powered by Overleaf could be found here:
